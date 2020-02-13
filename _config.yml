@@ -1,14 +1,14 @@
 # Setup
-title:        Project or Site name
-tagline:      A responsive theme for your project on GitHub Pages
+title:        豆丁的日常记录
+tagline:      真相，从来只有参与的人知道
 baseurl:      ""
 paginate:     1
 locale:       "en"
 
 # About/contact
 author:
-  name:       Author name
-  url:        http://yourhomepage.com 
+  name:       douding
+  url:        http://douding.me 
 
 # Gems
 gems:
