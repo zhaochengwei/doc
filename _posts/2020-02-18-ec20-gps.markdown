@@ -1,0 +1,9 @@
+---
+layout: default
+title:  "EC20 gps"
+date:   2020-02-15 00:00:00
+categories: main
+---
+<!-- https://shumeipai.nxez.com/2017/09/04/homekit-and-siri-voice-control-home-appliances.html -->
+# 默认打开GPS
+AT+QGPSCFG="autogps",1

@@ -1,0 +1,31 @@
+---
+layout: default
+title:  "修改Android7.1开机的logo"
+date:   2020-02-15 00:00:00
+categories: main
+---
+
+# 修改Android 7.1开机的logo
+
+平台RK3288
+具体板子X3288开发板
+
+## 定位开机logo的位置
+
+1.u-boot中查找dts，boot_logo为0，开机logo不是u-boot加载的
+
+2.后去kernel中去查找，同样的方式在dts中找到，并加载logo.bmp和logo_kernel.bmp
+
+查看具体的logo.bmp和logo_kernel.bmp格式
+得到：
+分辨率644*400
+8位的图像
+
+## 修改开机logo
+由于自己的分辨率是1024 * 600的，自己用PS绘制了一张1024*600的图片，但是ps默认的深度是24位的
+一定注意噢，在PS中选择图像-模式8位/通道
+直接导出为BMP格式的图片就可以啦！！！
+
+灰度 8位才真的有效
+## 开机
+成功显示我刚做的图像
