@@ -1,0 +1,31 @@
+---
+layout: default
+title:  "树莓派4B+ homeKit"
+date:   2020-02-15 00:00:00
+categories: main
+---
+
+# 树莓派安装wxPython
+
+1.树莓派系统镜像：
+2019-09-26-raspbian-buster-full.img
+md5:941D122B724C8154FFF5785E4FF0F68A
+
+2.安装gtk3库以及编译所需
+
+sudo apt-get install build-essential libgtk-3-dev
+
+3.pip3 install wxPython==4.0.7.post1
+然后你会发现编译要好久好久好久……
+下载压缩包，手动编译
+```
+tar zxvf wxPython-4.0.7.post1.tar.gz
+cd wxPython-4.0.7.post1
+pip3 install -r requirements.txt
+python3 build.py build bdist_wheel --jobs=4 --gtk3
+```
+大约4个小时后会在dist目录下找到编译好的wxPython-4.0.7.post1-cp37-cp37m-linux_armv7l.whl
+
+```
+pip3 install wxPython-4.0.1-cp36-cp36m-linux_armv7l.whl
+```
